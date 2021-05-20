@@ -1,0 +1,19 @@
+
+<!-- Date: 1st-2nd May 2020
+By : Shikha Singh -->
+
+<!-- Precautions for a particular Disease-->
+
+<%-include("header")-%>
+
+<h1 id="abc">You Must </h1>
+
+<div class="box">
+  <%for(var i=0;i<precautions.length;++i){%>
+  <div class="item">
+    <p><%=precautions[i]%></p>
+  </div>
+  <%}%>
+</div>
+
+<%-include("footer")-%>

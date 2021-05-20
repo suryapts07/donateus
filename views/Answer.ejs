@@ -1,0 +1,33 @@
+<!-- Date: 7-15th April 2020
+By : Shikha Singh -->
+
+<!--Result of Disease of an User -->
+
+
+<%-include("header")-%>
+
+  <h1 id="answer" style="color: rgb(158, 44, 50);"><u>Donation Successful!</u></h1>
+  <h1 id="abc" style="color:rgb(170, 73, 170)"><u>Thankyou for your donations</u></h1>
+
+  <div class="box" id="heading">
+    <a href="homeRemedies/<%=Title%>">
+      <button style="color:white">Track Your Donation</button>
+    </a>
+
+    <br />
+    <a href="precautions/<%=Title%>">
+      <button style="color:white">Donate More</button>
+    </a>
+
+    <br />
+    <a href="/hospital/list">
+      <button type="submit" style="color:white">See Previous Donations</button>
+    </a>
+
+    <br />
+    <a href="/<%=Title%>/resources">
+      <button type="submit" style="color:white">Know More About Us</button>
+    </a>
+  </div>
+
+  <%-include("footer")-%>

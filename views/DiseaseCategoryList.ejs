@@ -1,0 +1,22 @@
+<!-- Date: 20-25th March 2020
+By : Shikha Singh -->
+
+<!-- Category Display for Particular User -->
+
+
+<%-include("header")-%>
+
+  <h1 id="abc"><u>Select The Organisation You Want To Make The Donations</u></h1>
+
+  <div class="box">
+    <%for(var i=0;i<disease.length;++i){%>
+      <div class="item">
+        <a href="/successPage" style="text-decoration:none">
+          <%=disease[i].category%>
+        </a>
+      </div>
+      <%}%>
+  </div>
+
+
+  <%-include("footer")-%>

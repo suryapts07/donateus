@@ -1,0 +1,19 @@
+<!-- Date: 27th-29th April 2020
+By : Surya Pratap Singh -->
+<!-- Location of Nearby Hospitals Using Google Maps -->
+
+<%-include("header")-%>
+
+<h1 id="abc">Select a Location</h1>
+
+<div class="box">
+  <%for(var i=0;i<Location.length;++i){%>
+    <div class="item">
+  <p><a
+    href="https://www.google.com/maps/search/hospital/@<%=Location[i].lat%>,<%=Location[i].long%>,13z"><%=Location[i].name%></a>
+  </p>
+</div>
+<%}%>
+</div>
+
+<%-include("footer")-%>

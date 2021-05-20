@@ -1,0 +1,26 @@
+<!-- Date: 19th-22th April 2020
+By : Shikha Singh -->
+
+<!-- Reusable Resources list -->
+
+<%-include("header")-%>
+
+<h1 id="abc"> Links to all the Resources </h1>
+
+  <%for(var i=0;i<resource.length;++i){%>
+    <div class="box" id="heading">
+    <h3 id="r_disease"><%=resource[i].name%></h3>
+    </div>
+    <div class="box">
+  <div class="item">
+    <ul>
+      <li><p><a target="_blank" href=<%=resource[i].resources[0]%>>Site: Kidshealth.org</a></p></li>
+      <li><p><a target="_blank" href=<%=resource[i].resources[1]%>>Site: Familydoctor.org</a></p></li>
+      <li><p><a target="_blank" href=<%=resource[i].resources[2]%>>Site: Wikipedia.org</a></p></li>
+      </ul>
+      </div>
+        </div>
+    <%}%>
+
+
+  <%-include("footer")-%>
