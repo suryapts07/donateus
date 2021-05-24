@@ -1,0 +1,52 @@
+<!-- Date: 1st-2nd May 2020
+By : Surya Pratap Singh -->
+
+<!-- Details of the donar-->
+
+<%-include("header")-%>
+
+    <h1 id="abc"> Kindly Fill Your Personal Details Here </h1>
+
+    <div class="Dropdowns" style="width: 50%; margin-bottom: 200px;">
+
+        <form action="addDetails" method="post" id="users">
+
+            <div style="margin-top: 20px; height: 40px; padding-top: 8px;">
+                <label for="name" style="font-size: 27px; float: left; margin-left: 13%;">
+                    Name : </label>
+
+                <input type="text"
+                    style="background-color: rgb(233, 224, 226); float: right; height: 35px; width: 60%; border-radius: 5px; border: solid black 1px; margin-right: 30px;">
+            </div>
+
+            <div style="margin-top: 20px; height: 40px; padding-top: 8px;">
+                <label for="address" style="font-size: 27px; float: left; margin-left: 13%;">
+                    Address : </label>
+
+                <input type="text"
+                    style="background-color: rgb(233, 224, 226); float: right; height: 35px; width: 60%; border-radius: 5px; border: solid black 1px; margin-right: 30px;">
+            </div>
+
+            <div style="margin-top: 20px; height: 40px; padding-top: 8px;">
+                <label for="mobile" style="font-size: 27px; float: left; margin-left: 13%; ">
+                    Mobile
+                    No. :
+                </label>
+                <input type="text" style="background-color: rgb(233, 224, 226); float: right; height: 35px;
+                width: 25%; border-radius: 5px; border: solid black 1px; margin-right: 39%;">
+            </div>
+        </form>
+        <div style="text-align: center;">
+            <button onclick="nextPage()" style="width: 20%;">Next🠖🠖🠖</button>
+        </div>
+    </div>
+
+
+
+    <%-include("footer")-%>
+
+        <script>
+            function nextPage() {
+                document.location.href = "addDetails"
+            }
+        </script>

@@ -278,11 +278,10 @@ footer   {
   border-bottom: 1px dotted black;
 }
 
-label {
+.one {
   font-size: larger;
   /* background-color: #777; */
   vertical-align: middle;
-  
 }
 
 select {
