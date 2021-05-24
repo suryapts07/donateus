@@ -6,11 +6,13 @@ By : Shikha Singh -->
 
 <%-include("header")-%>
 
-  <h1 id="abc"><u>Select The Organisation You Want To Make The Donations</u></h1>
+  <h1 id="abc"
+    style="border-radius: 5px; border: solid black 2px; width: 60%; margin: auto; margin-top: 100px; background-color: rgb(201, 108, 111);">
+    Select The Organisation You Want To Make The Donations</h1>
 
-  <div class="box">
+  <div class="box" style="border: solid black 1px;">
     <%for(var i=0;i<disease.length;++i){%>
-      <div class="item">
+      <div class="item" style="border-bottom: dotted black 1px;">
         <a href="/successPage" style="text-decoration:none">
           <%=disease[i].category%>
         </a>
