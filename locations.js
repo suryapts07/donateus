@@ -1,38 +1,11 @@
 module.exports = [
   {
-    name: "Donation 1"
+    name: "Donation 3 (15/04/2020 at 10:00 AM)"
   },
   {
-    name: "Donation 2"
+    name: "Donation 2 (15/10/2019 at 9:15 AM)"
   },
   {
-    name: "Donation 3"
-  },
-  {
-    name: "Donation 4"
-  },
-  {
-    name: "Donation 5"
-  },
-  {
-    name: "Donation 6"
-  },
-  {
-    name: "Donation 7"
-  },
-  {
-    name: "Donation 8"
-  },
-  {
-    name: "Donation 9"
-  },
-  {
-    name: "Donation 10"
-  },
-  {
-    name: "Donation 11"
-  },
-  {
-    name: "Donation 12"
+    name: "Donation 1 (15/04/2019 at 7:20 AM)"
   }
 ]
