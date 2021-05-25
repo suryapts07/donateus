@@ -217,7 +217,7 @@ app.get("/contacts", function (req, res) {
 
 app.get("/addDetails", function (req, res) {
   res.render("SymptomsList", {
-    Title: "Add details about the cloths you want to donate"
+    Title: "Choose how you wish to Donate"
   });
 });
 
