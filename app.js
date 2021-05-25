@@ -120,7 +120,7 @@ app.get("/:type/resources", function (req, res) {
 //Date: 7th April 2020
 //By Shaunaq Paul
 //Get request for resources of all the disease
-app.get("/disease/allResoruces", function (req, res) {
+app.get("/getContactNum", function (req, res) {
 
   //This is used to get cumulative resources
   //of all the disease for better Understanding of any diseaseList
@@ -221,6 +221,12 @@ app.get("/addDetails", function (req, res) {
   });
 });
 
+app.get("/userDetails", function (req, res) {
+  res.render("UserDetails", {
+    Title: "Fill your details"
+  });
+});
+
 
 //Date: 15th April 2020
 //By Surya Pratap Singh
@@ -255,7 +261,7 @@ app.get("/precautions/:type", function (req, res) {
 //Date: 17th April 2020
 //By Surya Pratap Singh
 //Get request for finding nearby  hospitals
-app.get("/hospital/list", function (req, res) {
+app.get("/donationList", function (req, res) {
   //This helps user to get Nearby hospitals without switching application
   //We Map a user's Current location to geological coordinate
   //Then find all the hospitals near him/her.
@@ -271,6 +277,13 @@ app.get("/successPage", function (req, res) {
     Title: "Donation Successful!"
   });
 });
+
+app.get("/currentStatus", function (req, res) {
+  res.render("CurrentStatus", {
+    Title: "Current Status of your report"
+  });
+});
+
 
 //Date: 25th-30th April 2020
 //By Shikha Singh

@@ -3,16 +3,135 @@ By : Shikha Singh -->
 <!-- List of Symptoms under particular Category-->
 <%-include("header")-%>
 
-  <h1 id="abc" ><u><%=Title%></u></h1>
 
-  <div class="box" id="heading">
+  <h1 id="abc" style="color: rgb(112, 23, 23);"><u>Add the Cloth Details You Want To Donate in below fiels</u></h1>
+
+  <div class="Dropdowns">
+    <div class="DropdownItem">
+      <label for="gender" class="one">Gender :</label>
+
+      <select id="gender">
+        <option value="none" selected>none</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="others">Others</option>
+      </select>
+    </div>
+
+
+    <div class="DropdownItem">
+      <label for="age" class="one">Age :</label>
+
+      <select id="age">
+        <option value="none">none</option>
+        <option value="1">0 - 6</option>
+        <option value="2">7 - 12</option>
+        <option value="3">13 - 18</option>
+        <option value="4">18 +</option>
+      </select>
+    </div>
+
+
+    <div class="DropdownItem">
+      <label for="size" class="one">Size :</label>
+
+      <select id="size">
+        <option value="none">none</option>
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+        <option value="extrlarge">Extra Large</option>
+      </select>
+    </div>
+
+
+    <div class="DropdownItem">
+      <label for="weather" class="one">Weather :</label>
+
+      <select id="weather">
+        <option value="none" selected>none</option>
+        <option value="summer">Summer</option>
+        <option value="winter">Winter</option>
+      </select>
+    </div>
+
+    <div class="DropdownItem">
+      <label for="quantity" class="one">Quantity :</label>
+
+      <input type="number" id="quantity" min="0"
+        style="width: 82px; border-radius: 5px; background-color: rgb(170, 97, 97); padding-left: 2px;">
+    </div>
+
+    <button style="width: 200px; margin-left: 28%;" onclick="addCategoryToList()">Add Item</button>
+
+  </div>
+
+
+  <div class="Dropdowns" style="text-align: center; padding: 10px 5px 10px 5px;">
+
+    <h2 id="empty_war">No clothes are added to the list yet</h2>
+
+    <ol id="clothes_categories"></ol>
+  </div>
+
+
+
+  <br>
+
+
+  <div class="box" id="heading" style="width: 50%;">
     <a href="DiseaseCatList">
-      <button style="color:white">Select Organisation to Donate</button>
+      <button style="color:white; width: 40%;">Choose Organisation to Donate</button>
     </a>
 
     <a href="successPage">
-      <button style="color:white">Donate to the most Needy</button>
+      <button style="color:white; width: 40%;">Donate Directly</button>
     </a>
   </div>
+  <!-- <div class="box" id="heading">
+    <a href="userDetails">
+      <button style="color:white">Next <bold>🠖</bold>🠖</button>
+    </a>
+  </div> -->
+
 
   <%-include("footer")-%>
+
+
+    <script>
+
+      function addCategoryToList() {
+        var e = document.getElementById("gender");
+        var gender = e.options[e.selectedIndex].text;
+        e.selectedIndex = 0;
+
+        var e = document.getElementById("age");
+        var age = e.options[e.selectedIndex].text;
+        e.selectedIndex = 0;
+
+        var e = document.getElementById("size");
+        var size = e.options[e.selectedIndex].text;
+        e.selectedIndex = 0;
+
+        var e = document.getElementById("weather");
+        var weather = e.options[e.selectedIndex].text;
+        e.selectedIndex = 0;
+
+        var e = document.getElementById("quantity");
+        var quantity = e.value;
+        e.value = 0;
+
+        var list = document.getElementById('clothes_categories');
+        var entry = document.createElement('li');
+
+        if (gender != "none" && age != "none" && size != "none" && weather != "none" && quantity > 0) {
+          var e = document.getElementById("empty_war");
+          if (e != null) {
+            e.remove();
+          }
+          entry.appendChild(document.createTextNode(gender + " " + age + " " + size + " " + weather + " " + quantity));
+          list.appendChild(entry);
+        }
+      };
+
+    </script>

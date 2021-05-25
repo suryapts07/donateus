@@ -5,22 +5,29 @@ By : Shikha Singh -->
 
 <%-include("header")-%>
 
-<h1 id="abc"> Links to all the Resources </h1>
+  <h1 id="abc"
+    style="border-radius: 5px; border: solid black 2px; width: 40%; margin: auto; margin-top: 100px; background-color: rgb(201, 108, 111);">
+    Enter
+    your related mobile
+    number </h1>
 
-  <%for(var i=0;i<resource.length;++i){%>
-    <div class="box" id="heading">
-    <h3 id="r_disease"><%=resource[i].name%></h3>
+  <br>
+  <br>
+  <div class="Dropdowns" style=" width: 40%; margin: auto; margin-bottom: 300px;">
+    <form action="currentStatus">
+      <input type="text" placeholder="mobile number"
+        style="background-color: rgb(248, 228, 226); padding-left: 10px; border-radius: 5px; margin-top: 20px; margin-bottom: 20px; width: 250px; border: dotted black 1px;">
+    </form>
+
+    <div style="text-align: center;">
+      <button onclick="nextPage()" style="width: 200px;">Next🠖🠖🠖</button>
     </div>
-    <div class="box">
-  <div class="item">
-    <ul>
-      <li><p><a target="_blank" href=<%=resource[i].resources[0]%>>Site: Kidshealth.org</a></p></li>
-      <li><p><a target="_blank" href=<%=resource[i].resources[1]%>>Site: Familydoctor.org</a></p></li>
-      <li><p><a target="_blank" href=<%=resource[i].resources[2]%>>Site: Wikipedia.org</a></p></li>
-      </ul>
-      </div>
-        </div>
-    <%}%>
 
+  </div>
 
   <%-include("footer")-%>
+    <script>
+      function nextPage() {
+        document.location.href = "currentStatus"
+      }
+    </script>

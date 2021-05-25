@@ -144,7 +144,7 @@ h1 {
 }
 
 .box {
-  max-width: 400px;
+  width: 400px;
   margin: 50px auto;
   background: #edc0c2;
   border-radius: 10px;
@@ -253,4 +253,45 @@ footer   {
   color: #777;
   padding: 40px;
   text-align: center;
+}
+
+
+/* add detail page select item dropdown CSS */
+.Dropdowns{
+  background-color: rgb(221, 176, 176);
+  width: 30%;
+  margin: auto;
+  margin-top: 50px;
+  /* margin-bottom: 30px; */
+  padding-top: 10px;
+  border-radius: 10px;
+  border: 3px solid rgb(0, 0, 0);
+  box-shadow: 2px 4px #a09191;
+}
+
+.DropdownItem {
+  /* background-color: #da3333; */
+  padding-left: 29%;
+  padding-right: 26%;
+  margin: 5px;
+  font-size: 21px;
+  border-bottom: 1px dotted black;
+}
+
+.one {
+  font-size: larger;
+  /* background-color: #777; */
+  vertical-align: middle;
+}
+
+select {
+  font-size: 18px;
+  float: right;
+  background-color: rgb(170, 97, 97);
+  border-radius: 5px;
+  border-bottom: 1px solid black;
+}
+
+option{
+  font-size: 18px;
 }
