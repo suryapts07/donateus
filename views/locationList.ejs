@@ -6,12 +6,12 @@ By : Surya Pratap Singh -->
 
   <h1 id="abc">List of all your previous donations</h1>
 
-  <div class="box">
+  <div class="box" style="margin-bottom: 200px;">
     <%for(var i=0;i<Location.length;++i){%>
       <div class="item">
-        <p><u><a href="currentStatus">
-            <%=Location[i].name%>
-          </a></u>
+        <p><u><a href="currentStatus" style="color: black;">
+              <%=Location[i].name%>
+            </a></u>
         </p>
       </div>
       <%}%>
